@@ -1,0 +1,38 @@
+# --- Secrets (never commit) ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Run outputs (transcripts, results, checklist reports) ---
+runs/
+
+# --- Claude Code (dev tool only; the EV siting system doesn't use these) ---
+# All Claude Code config is kept out of git for now.
+**/.claude/
+**/CLAUDE.md
+**/CLAUDE.local.md
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Packaged copies ---
+*.zip

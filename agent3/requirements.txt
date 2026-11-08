@@ -1,0 +1,8 @@
+# Agent 3 environment (NOT the PowerMCP environment: they need different mcp versions)
+langchain>=1.4,<2
+langchain-anthropic>=1.7,<2
+langchain-mcp-adapters>=0.3.2,<0.4
+pydantic>=2.13,<3
+pydantic-settings>=2.16,<3
+pytest>=9
+python-dotenv>=1

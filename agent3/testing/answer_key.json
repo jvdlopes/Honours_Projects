@@ -1,0 +1,331 @@
+{
+  "generated": "2026-11-02T08:09:13.020327+00:00",
+  "procedure_version": "0.1.0",
+  "feeder": "IEEE123Master.dss",
+  "settings": "3-phase, wye, model=1, pf=1.0, kV=kv_base*sqrt(3), Static control, solver defaults, LN 0.95-1.05, norm_amps 100%",
+  "tolerances": {
+    "kw": 3.0,
+    "losses_kw": 2.0,
+    "pu": 0.002,
+    "pct": 1.0
+  },
+  "cases": {
+    "ok_600": {
+      "bus": "60",
+      "kw": 600.0,
+      "run_facts": {
+        "bus_nodes": [
+          1,
+          2,
+          3
+        ],
+        "bus_kv_base_ln": 2.4017771198288433,
+        "charger_kv_ll": 4.16,
+        "baseline_converged": true,
+        "charger_converged": true
+      },
+      "placeholder_ratings": true,
+      "baseline": {
+        "feeder_kw": 3615.2418959998226,
+        "feeder_kvar": 1311.5102805573088,
+        "losses_kw": 95.97670735302279,
+        "losses_kvar": 192.49935699550076,
+        "v_max_pu": 1.0499609311749751,
+        "v_min_pu": 0.979211031525554,
+        "charger_bus_v_pu": {
+          "1": 0.9815993878719936,
+          "2": 1.0200337101070345,
+          "3": 0.9988839974218306
+        },
+        "voltage_violation_count": 0,
+        "thermal_violation_count": 5,
+        "regulator_taps": {
+          "reg1a": 1.0375,
+          "reg2a": 1.0,
+          "reg3a": 1.0125,
+          "reg4a": 1.0625,
+          "reg3c": 1.0,
+          "reg4b": 1.025,
+          "reg4c": 1.0375
+        },
+        "capacitor_states": {
+          "c83": [
+            1
+          ],
+          "c88a": [
+            1
+          ],
+          "c90b": [
+            1
+          ],
+          "c92c": [
+            1
+          ]
+        }
+      },
+      "with_charger": {
+        "feeder_kw": 4238.630922048415,
+        "feeder_kvar": 1388.5112072487934,
+        "losses_kw": 131.0185522678399,
+        "losses_kvar": 265.0255646483669,
+        "v_max_pu": 1.0436216338949327,
+        "v_min_pu": 0.9705541531027979,
+        "charger_bus_v_pu": {
+          "1": 0.9729256117590598,
+          "2": 1.0139405535721246,
+          "3": 0.9928605693709088
+        },
+        "voltage_violation_count": 0,
+        "thermal_violation_count": 8,
+        "regulator_taps": {
+          "reg1a": 1.0375,
+          "reg2a": 1.0,
+          "reg3a": 1.0125,
+          "reg4a": 1.0625,
+          "reg3c": 1.0,
+          "reg4b": 1.025,
+          "reg4c": 1.0375
+        },
+        "capacitor_states": {
+          "c83": [
+            1
+          ],
+          "c88a": [
+            1
+          ],
+          "c90b": [
+            1
+          ],
+          "c92c": [
+            1
+          ]
+        }
+      },
+      "comparison": {
+        "delta_feeder_kw": 623.3890260485928,
+        "delta_losses_kw": 35.04184491481712,
+        "charger_bus_delta_v_pu": {
+          "1": -0.008673776112933851,
+          "2": -0.006093156534909827,
+          "3": -0.00602342805092182
+        },
+        "tap_changes": {},
+        "violation_counts": {
+          "new": {
+            "thermal": 3
+          },
+          "made_worse": {
+            "thermal": 5
+          }
+        },
+        "violations_by_label": {
+          "new": {
+            "thermal": [
+              "line.l116",
+              "line.l52",
+              "line.sw2"
+            ]
+          },
+          "made_worse": {
+            "thermal": [
+              "line.l10",
+              "line.l115",
+              "line.l3",
+              "line.l7",
+              "line.sw1"
+            ]
+          }
+        }
+      }
+    },
+    "ok_3000": {
+      "bus": "60",
+      "kw": 3000.0,
+      "run_facts": {
+        "bus_nodes": [
+          1,
+          2,
+          3
+        ],
+        "bus_kv_base_ln": 2.4017771198288433,
+        "charger_kv_ll": 4.16,
+        "baseline_converged": true,
+        "charger_converged": true
+      },
+      "placeholder_ratings": true,
+      "baseline": {
+        "feeder_kw": 3615.2418959998226,
+        "feeder_kvar": 1311.5102805573088,
+        "losses_kw": 95.97670735302279,
+        "losses_kvar": 192.49935699550076,
+        "v_max_pu": 1.0499609311749751,
+        "v_min_pu": 0.979211031525554,
+        "charger_bus_v_pu": {
+          "1": 0.9815993878719936,
+          "2": 1.0200337101070345,
+          "3": 0.9988839974218306
+        },
+        "voltage_violation_count": 0,
+        "thermal_violation_count": 5,
+        "regulator_taps": {
+          "reg1a": 1.0375,
+          "reg2a": 1.0,
+          "reg3a": 1.0125,
+          "reg4a": 1.0625,
+          "reg3c": 1.0,
+          "reg4b": 1.025,
+          "reg4c": 1.0375
+        },
+        "capacitor_states": {
+          "c83": [
+            1
+          ],
+          "c88a": [
+            1
+          ],
+          "c90b": [
+            1
+          ],
+          "c92c": [
+            1
+          ]
+        }
+      },
+      "with_charger": {
+        "feeder_kw": 6864.715473690285,
+        "feeder_kvar": 1835.8104135751819,
+        "losses_kw": 349.9916165346496,
+        "losses_kvar": 717.5137427455775,
+        "v_max_pu": 1.0562380800731714,
+        "v_min_pu": 0.952724350434074,
+        "charger_bus_v_pu": {
+          "1": 0.9550729950035881,
+          "2": 1.008670465907513,
+          "3": 0.9862734051328373
+        },
+        "voltage_violation_count": 9,
+        "thermal_violation_count": 12,
+        "regulator_taps": {
+          "reg1a": 1.05625,
+          "reg2a": 0.99375,
+          "reg3a": 1.0125,
+          "reg4a": 1.0875,
+          "reg3c": 0.99375,
+          "reg4b": 1.0375,
+          "reg4c": 1.05
+        },
+        "capacitor_states": {
+          "c83": [
+            1
+          ],
+          "c88a": [
+            1
+          ],
+          "c90b": [
+            1
+          ],
+          "c92c": [
+            1
+          ]
+        }
+      },
+      "comparison": {
+        "delta_feeder_kw": 3249.473577690462,
+        "delta_losses_kw": 254.01490918162682,
+        "charger_bus_delta_v_pu": {
+          "1": -0.026526392868405524,
+          "2": -0.011363244199521505,
+          "3": -0.012610592288993305
+        },
+        "tap_changes": {
+          "reg1a": {
+            "baseline": 1.0375,
+            "with_charger": 1.05625
+          },
+          "reg2a": {
+            "baseline": 1.0,
+            "with_charger": 0.99375
+          },
+          "reg4a": {
+            "baseline": 1.0625,
+            "with_charger": 1.0875
+          },
+          "reg3c": {
+            "baseline": 1.0,
+            "with_charger": 0.99375
+          },
+          "reg4b": {
+            "baseline": 1.025,
+            "with_charger": 1.0375
+          },
+          "reg4c": {
+            "baseline": 1.0375,
+            "with_charger": 1.05
+          }
+        },
+        "violation_counts": {
+          "new": {
+            "thermal": 7,
+            "overvoltage": 9
+          },
+          "made_worse": {
+            "thermal": 5
+          }
+        },
+        "violations_by_label": {
+          "new": {
+            "thermal": [
+              "line.l116",
+              "line.l52",
+              "line.l53",
+              "line.l55",
+              "line.l58",
+              "line.sw2",
+              "transformer.reg1a"
+            ],
+            "overvoltage": [
+              "1.2",
+              "149.1",
+              "149.2",
+              "149.3",
+              "150r.1",
+              "150r.2",
+              "150r.3",
+              "2.2",
+              "83.2"
+            ]
+          },
+          "made_worse": {
+            "thermal": [
+              "line.l10",
+              "line.l115",
+              "line.l3",
+              "line.l7",
+              "line.sw1"
+            ]
+          }
+        }
+      }
+    },
+    "bad_bus": {
+      "bus": "999",
+      "kw": 600.0,
+      "expect_status": "bus_not_found",
+      "expect_stage": "bus_check"
+    },
+    "phase_bus": {
+      "bus": "26",
+      "kw": 600.0,
+      "expect_status": "phase_mismatch",
+      "expect_stage": "bus_check",
+      "note": "bus 26 has nodes [1, 3]"
+    },
+    "missing_file": {
+      "bus": "60",
+      "kw": 600.0,
+      "model_file": "does_not_exist.dss",
+      "expect_status": "model_not_found",
+      "expect_stage": "compile"
+    }
+  }
+}
